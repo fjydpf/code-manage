@@ -1,0 +1,6 @@
+1. 更新 package_ex (https://github.com/kooiot/packages_ex)到最新
+2. 架设 http文件服务器，将skynet & freeioe压缩包复制到http服务器
+3. 更新 package_ex/kooiot/skynet/Makefile 和 package_ex/kooiot/freeioe/Makefile中的下载地址到架设好的http文件服务器地址
+4. 在openwrt目录中更新feeds (./scripts/feeds update -a && ./script/feeds install -a)
+5. 在openwrt目录中运行make menuconfig 并选中 KooIoT 下的 freeioe_bmr200 包
+6. 编译openwrt固件
